@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ApexPlanet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="background-animation">
+    <div class="stars"></div>
+  </div> 
+
+  <header>
+    <h1 class="logo">ApexPlanet</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#" onclick="showContact()">Contact</a>
+    </nav>
+  </header> 
+
+  <section class="hero">
+    <h2>A fully integrated<br>digital services platform</h2>
+    <h3>This heading emphasizes the company’s commitment to innovation and highlights its
+        expertise in delivering advanced software solutions. It portrays ApexPlanet Software
+        Pvt. Ltd. as a forward-thinking and reliable partner in the tech industry.</h3>
+    <p>We help you build modern websites and applications with scalable and intelligent design powered by ApexPlanet.</p>
+    <button onclick="scrollToServices()">Explore Services</button>
+
+    <!-- Added Sign In and Register Buttons -->
+    <button onclick="signIn()">Sign In</button>
+    <button onclick="register()">Register</button>
+  </section> 
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <!-- You can keep adding more services here -->
+      <div class="service" onclick="highlightService(this)">Web Development</div>
+      <div class="service" onclick="highlightService(this)">Mobile Apps</div>
+      <div class="service" onclick="highlightService(this)">Cloud Deployment</div>
+      <div class="service" onclick="highlightService(this)">Product Design</div>
+      <div class="service" onclick="highlightService(this)">AI Integration</div>
+      <div class="service" onclick="highlightService(this)">Maintenance</div>
+      <div class="service" onclick="highlightService(this)">Security Services</div>
+      <div class="service" onclick="highlightService(this)">DevOps</div>
+      <div class="service" onclick="highlightService(this)">Database Management</div>
+      <div class="service" onclick="highlightService(this)">Graphic Designing</div>
+      <div class="service" onclick="highlightService(this)">Youtube Marketing</div>
+      <div class="service" onclick="highlightService(this)">Social Media Marketing</div>
+      <div class="service" onclick="highlightService(this)">Email Marketing</div>
+      <div class="service" onclick="highlightService(this)">SMS Marketing</div>
+      <!-- Add more services to reach 30 as needed -->
+    </div>
+  </section> 
+
+  <section id="contact" style="display: none;">
+    <h2>Contact Us</h2>
+    <div class="social-icons">
+      <a href="#" title="X"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section> 
+
+  <script src="script.js"></script>
+</body>
+</html>
